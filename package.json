@@ -1,6 +1,6 @@
 {
-    "homepage": "https://sabry-63.github.io/reactApp/",
-    "name": "my-app",
+    "homepage": "https://sabry-63.github.io/food-app/",
+    "name": "food-app",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
