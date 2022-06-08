@@ -1,0 +1,12 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "about",
+        "chef": "chef",
+        "menu": "menu",
+        "reservation": "reservation",
+        "blog": "blog",
+        "contact": "Contact",
+        "languages": "lang"
+    }
+}

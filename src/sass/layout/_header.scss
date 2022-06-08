@@ -1,0 +1,88 @@
+.main-header {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .swiper-slide {
+        .header__item {
+            height: 100vh;
+            &::before {
+                content: "";
+                inset: 0;
+                position: absolute;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                );
+            }
+            .header__item-content {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                color: $white;
+                text-align: center;
+                width: 100%;
+                span {
+                    letter-spacing: 4px;
+                    font-weight: bold;
+                }
+                span:nth-child(1) {
+                    border: 1px solid $white;
+                    padding: 10px;
+                }
+                h1 {
+                    font-size: $f-size * 8;
+                    font-family: $f-family;
+                    @include media(max, $tab-width) {
+                        font-size: $f-size * 4;
+                    }
+                }
+                & > span:nth-child(3) {
+                    color: $main-color;
+                    position: relative;
+                    font-size: $f-size * 1.5;
+                    &::after,
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100px;
+                        background-color: rgba($main-color, 0.6);
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 2px;
+                    }
+                    &::before {
+                        left: 100px;
+                    }
+                    &::after {
+                        right: 100px;
+                    }
+                }
+            }
+            img {
+                transform: scale(0.95);
+                transition: transform 1s;
+                position: relative;
+                z-index: -1;
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        .header__item {
+            img {
+                transform: scale(1);
+            }
+        }
+    }
+    .swiper {
+        .swiper-pagination {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 25%;
+        }
+    }
+}

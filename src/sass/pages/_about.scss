@@ -1,0 +1,16 @@
+.page-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../assets/images/header/wallpaper3.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    .about__counter {
+        margin-bottom: 20px;
+        .about__counter-title {
+            color: $white;
+            font-size: $f-size * 3;
+        }
+        .about__counter-desc {
+            color: rgba($white, 0.5);
+        }
+    }
+}

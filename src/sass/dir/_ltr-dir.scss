@@ -1,0 +1,40 @@
+// Setting
+$s: left;
+$e: right;
+
+$p: 1;
+$n: -1;
+
+// Text Style
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;900&display=swap");
+// @font-face {
+//     font-family: "Open Sans";
+//     src: url("../assets/fonts/Open_Sans/OpenSans-Regular.eot"); /* IE9 Compat Modes */
+//     src: url("../assets/fonts/Open_Sans/OpenSans-Regular.eot?#iefix")
+//             format("embedded-opentype"),
+//         /* IE6-IE8 */ url("../assets/fonts/Open_Sans/OpenSans-Regular.woff2")
+//             format("woff2"),
+//         /* Super Modern Browsers */
+//             url("../assets/fonts/Open_Sans/OpenSans-Regular.woff")
+//             format("woff"),
+//         /* Pretty Modern Browsers */
+//             url("../assets/fonts/Open_Sans/OpenSans-Regular.ttf")
+//             format("truetype"),
+//         /* Safari, Android, iOS */
+//             url("../assets/fonts/Open_Sans/OpenSans-Regular.svg#svgFontName")
+//             format("svg"); /* Legacy iOS */
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}

@@ -1,0 +1,37 @@
+.page-contact {
+    .contact__info {
+        .contact__info-box {
+            padding: 30px 15px 20px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            color: rgba($black, 0.5);
+            border: 1px solid rgba($black, 0.1);
+            transition: border 0.4s, color 0.4s;
+            .contact__info-icon {
+                position: absolute;
+                color: $main-color;
+                background-color: $white;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 50%;
+                top: -25px;
+                transition: background-color 0.4s, color 0.4s;
+                font-size: $f-size * 1.5;
+            }
+            &:hover {
+                border: 1px solid $main-color;
+                color: $main-color;
+                .contact__info-icon {
+                    background-color: $main-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

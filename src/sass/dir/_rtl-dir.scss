@@ -1,0 +1,20 @@
+// Setting
+$s: right;
+$e: left;
+
+$p: -1;
+$n: 1;
+
+// Text Style
+body {
+    direction: rtl;
+}
+
+[type='email'],
+[type='number'],
+[type='tel'],
+[type='url'],
+[type='date'],
+[type='time'] {
+    text-align: right;
+}

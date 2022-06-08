@@ -1,0 +1,144 @@
+// Main Style theme
+
+.main-color {
+    color: $main-color;
+}
+
+.main-bg {
+    background-color: $main-color;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.haeder-page {
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../../assets/images/bg/bustomer.webp');
+    background-size: cover;
+    .haeder-page__title {
+        color: $white;
+        font-weight: normal;
+        font-size: $f-size * 3;
+        text-align: center;
+        @include media(max, $tab-width) {
+            font-size: $f-size * 2;
+        }
+    }
+    .breadcrumb {
+        margin-top: 10px;
+        .breadcrumb-item {
+            &,
+            a {
+                color: rgba($white, 0.8);
+                font-size: $f-size * 1.5;
+                transition: color 0.4s;
+                @include media(max, $tab-width) {
+                    font-size: $f-size * 1.2;
+                }
+                &:hover {
+                    color: $main-color;
+                }
+            }
+            &.active {
+                color: rgba($white, 0.5);
+            }
+        }
+    }
+}
+
+.pagination {
+    gap: 5px;
+    .page-item {
+        .page-link {
+            color: $main-color;
+            margin: 0 5px;
+            border-radius: 5px;
+            font-size: $f-size * 1.2;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            padding: 0;
+        }
+    }
+}
+
+.btn-top {
+    position: fixed;
+    #{$e}: 20px;
+    bottom: 20px;
+    a {
+        border-radius: 2px;
+        border: 1px solid $main-color;
+        background-color: $main-color;
+        box-shadow: 0px 10px 15px 0 rgba($black, 0.2);
+        color: $white;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        display: block;
+        transition: background-color 0.4s, color, 0.4s;
+        font-size: $f-size * 1.5;
+    }
+    &:hover a {
+        color: $main-color;
+        background-color: $white;
+    }
+}
+
+#loader {
+    background-color: #010338;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loader-img {
+        width: 500px;
+        max-width: 100%;
+    }
+}
+
+.main-title {
+    &.center-title {
+        .title__text {
+            &::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .title__text {
+        position: relative;
+        font-size: $f-size * 3;
+        @include media(max, $tab-width) {
+            font-size: $f-size * 2;
+        }
+        color: $black;
+        &::before {
+            content: attr(data-title);
+            position: absolute;
+            top: -20px;
+            font-family: $f-family;
+            color: $main-color;
+            font-size: $f-size * 2.8;
+            @include media(max, $tab-width) {
+                font-size: $f-size * 2;
+                top: -18px;
+            }
+        }
+    }
+}
+
+%bg-section {
+    box-shadow: 0 0 5px rgba($black, 0.1);
+    padding: 30px 20px;
+    border-radius: 5px;
+}

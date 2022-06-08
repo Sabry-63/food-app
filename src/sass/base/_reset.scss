@@ -1,0 +1,48 @@
+// Reset Values Tags
+img {
+    object-fit: contain;
+    width: 100%;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: $main-color;
+}
+
+label {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+// Reset Values bootstrap
+.tooltip-inner {
+    background-color: $main-color !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: $main-color !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label:before {
+    color: $white;
+    border-color: $main-color;
+    background-color: $main-color;
+}
+
+.form-check-input:checked {
+    color: $white;
+    border-color: $main-color;
+    background-color: $main-color;
+}

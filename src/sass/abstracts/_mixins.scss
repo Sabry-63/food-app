@@ -1,0 +1,25 @@
+// =====================================
+// Media
+@mixin media($minmax, $width: "(#{$minmax}-width: #{$width})") {
+    @media (#{$minmax}-width: $width) {
+        @content;
+    }
+}
+// Example
+// @include media(max, 767px) {
+//     element{Prop}
+// }
+// =====================================
+
+// Prefiexer
+@mixin prefiexer($prop, $val, $prefiexes: ()) {
+    @each $prefiex in $prefiexes {
+        #{"-" + $prefiex + "-"+ &prop}: $val;
+    }
+    #{$prop}: $val;
+}
+
+// Example
+// @include prefiexer(display, flex, wibkit o moz ms)
+
+//======================================
