@@ -27,7 +27,7 @@ import Footer from './layout/Footer';
 function App() {
     return (
         <div className="App">
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Navbar />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
